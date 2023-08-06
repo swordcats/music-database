@@ -1,6 +1,7 @@
 import urllib.parse
 import requests
 from access_token import GENIUS_ACCESS_TOKEN
+from datetime import date
 
 SUGAR_RUSH_RIDE = 8661639
 BASE_GENIUS_URL = 'https://api.genius.com'
@@ -16,6 +17,8 @@ def format_credits(song_metadata):
 
     song['Title'] = song_metadata['title']
     song['Artist'] = _retrieve_artist_names(song_metadata)
+    song['Release Date'] = song_metadata['release_date']
+    song['Album'] = song_metadata['album']['name']
 
     producers = []
     for x in song_metadata['producer_artists']:
@@ -71,6 +74,7 @@ def _retrieve_artist_names(song_metadata):
     featured = song_metadata['featured_artists']
 
     if featured:
-        artists.append(featured['name'])
+        for x in featured:
+            artists.append(x['name'])
 
     return artists
