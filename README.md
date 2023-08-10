@@ -8,6 +8,9 @@ this project makes use of the genius API and notion API to accomplish this goal:
 
 # how to use
 {still writing this out sorry -- you can contact me if you want an access token before i get around to writing this}
+
 the only thing you have to modify is the file called access_token.py: there are two variables within that file, GENIUS_ACCESS_TOKEN and NOTION_ACCESS_TOKEN. 
+
 you need to generate access tokens for both genius and notion and add them to that file.
+
 you also need to create the notion database you want to add to, give this connection permission to modify it, and give the link to music-database
