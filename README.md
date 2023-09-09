@@ -7,7 +7,7 @@ some background: i am a kpop fan (...) and in that industry, the act of composin
 this project makes use of the genius API and notion API to accomplish this goal: basically, it allows you to search for a song on genius, then retrieves all the properties of the song.  it picks out writers, producers, and any other credits of your interest, and repackages them in a dictionary. then, it uses the notion API to add that dictionary into a database.
 
 # how to use
-{still writing this out sorry -- you can contact me if you want an access token before i get around to writing this}
+{still writing this out sorry -- you can contact me if you want an access token before i get around to writing this. if i'm being honest i genuinely don't think anyone other than me will be using this so i might never get around to it LOL}
 
 the only thing you have to modify is the file called access_token.py: there are two variables within that file, GENIUS_ACCESS_TOKEN and NOTION_ACCESS_TOKEN. 
 
